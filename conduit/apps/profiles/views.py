@@ -17,6 +17,7 @@ class ProfileRetrieveAPIView(RetrieveAPIView):
     serializer_class = ProfileSerializer
 
     def retrieve(self, request, username, *args, **kwargs):
+        # ArchBeagle language walk: a comment-only test edit, closed unmerged.
         # Try to retrieve the requested profile and throw an exception if the
         # profile could not be found.
         try:

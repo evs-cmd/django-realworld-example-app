@@ -42,6 +42,7 @@ class ArticleViewSet(mixins.CreateModelMixin,
         return queryset
 
     def create(self, request):
+        # ArchBeagle language walk: a comment-only test edit, closed unmerged.
         serializer_context = {
             'author': request.user.profile,
             'request': request
